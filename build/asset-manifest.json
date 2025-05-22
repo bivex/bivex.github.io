@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CalcTrainer/static/css/main.5155388e.css",
+    "main.js": "/CalcTrainer/static/js/main.516b3da9.js",
+    "index.html": "/CalcTrainer/index.html",
+    "main.5155388e.css.map": "/CalcTrainer/static/css/main.5155388e.css.map",
+    "main.516b3da9.js.map": "/CalcTrainer/static/js/main.516b3da9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5155388e.css",
+    "static/js/main.516b3da9.js"
+  ]
+}
