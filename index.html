@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Математический тренажёр</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- MathJax -->
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Главное меню -->
+        <div id="main-menu" class="screen active">
+            <h1>Математический тренажёр</h1>
+            <div class="settings">
+                <div class="setting-group">
+                    <h2>Выберите операцию:</h2>
+                    <div class="operation-buttons">
+                        <button data-operation="addition">Сложение</button>
+                        <button data-operation="subtraction">Вычитание</button>
+                        <button data-operation="multiplication">Умножение</button>
+                        <button data-operation="division">Деление</button>
+                        <button data-operation="mixed">Смешанный режим</button>
+                        <button data-operation="life">Жизненные задачи</button>
+                    </div>
+                </div>
+                <div class="setting-group">
+                    <h2>Выберите сложность:</h2>
+                    <div class="difficulty-buttons">
+                        <button data-difficulty="easy">Лёгкий (1-10)</button>
+                        <button data-difficulty="medium">Средний (10-100)</button>
+                        <button data-difficulty="hard">Сложный (100-1000)</button>
+                        <button data-difficulty="life">Жизнь (покупки)</button>
+                    </div>
+                </div>
+                <div class="setting-group">
+                    <div class="support-mode">
+                        <label class="switch">
+                            <input type="checkbox" id="support-mode">
+                            <span class="slider"></span>
+                        </label>
+                        <span>Режим подсказок</span>
+                    </div>
+                </div>
+                <button id="start-button" class="primary-button">Начать</button>
+            </div>
+        </div>
+
+        <!-- Игровой экран -->
+        <div id="game-screen" class="screen">
+            <div class="game-header">
+                <div class="stats">
+                    <span>Правильно: <span id="correct-count">0</span></span>
+                    <span>Неправильно: <span id="incorrect-count">0</span></span>
+                </div>
+                <div class="timer">
+                    Осталось времени: <span id="time-left">120</span>с
+                </div>
+            </div>
+            <div class="game-content">
+                <div id="problem" class="problem"></div>
+                <div id="hints" class="hints"></div>
+                <div class="answer-options">
+                    <button class="answer-option" data-index="0"></button>
+                    <button class="answer-option" data-index="1"></button>
+                    <button class="answer-option" data-index="2"></button>
+                    <button class="answer-option" data-index="3"></button>
+                </div>
+                <div id="feedback" class="feedback"></div>
+            </div>
+        </div>
+
+        <!-- Экран результатов -->
+        <div id="results-screen" class="screen">
+            <h2>Результаты</h2>
+            <div class="results-content">
+                <p>Правильных ответов: <span id="final-correct">0</span></p>
+                <p>Неправильных ответов: <span id="final-incorrect">0</span></p>
+                <p>Процент правильных ответов: <span id="accuracy">0</span>%</p>
+            </div>
+            <div class="results-buttons">
+                <button id="play-again" class="primary-button">Играть снова</button>
+                <button id="show-history" class="secondary-button">История результатов</button>
+            </div>
+        </div>
+
+        <!-- Экран истории -->
+        <div id="history-screen" class="screen">
+            <h2>История результатов</h2>
+            <div class="history-content">
+                <div class="history-list"></div>
+            </div>
+            <button id="back-to-results" class="secondary-button">Назад к результатам</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
