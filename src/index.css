@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+.problem {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.answer-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.answer-option {
+  padding: 1rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.5rem;
+  font-size: 1.25rem;
+  transition: all 0.2s;
+}
+
+.answer-option:hover {
+  border-color: #3b82f6;
+  background-color: #f3f4f6;
+}
+
+.answer-option.correct {
+  border-color: #10b981;
+  background-color: #d1fae5;
+}
+
+.answer-option.incorrect {
+  border-color: #ef4444;
+  background-color: #fee2e2;
+}
+
+.feedback {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.feedback.correct {
+  color: #10b981;
+}
+
+.feedback.incorrect {
+  color: #ef4444;
+} 
