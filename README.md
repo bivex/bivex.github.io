@@ -1,1 +1,0 @@
-[![Served as 🌐](https://a.b-b.top/badge.svg?repo=bivex.github.io&label=Served&background_color=ffb300&background_color2=ffc107&utm_source=github&utm_medium=readme&utm_campaign=badge)](https://a.b-b.top)

@@ -1,0 +1,50 @@
+/* Pastel light syntax highlighting */
+pre code {
+	color: #3d3d3d;
+	background: transparent;
+	padding: 0;
+	border: none;
+}
+
+/* Comments */
+pre code .c, pre code .cm, pre code .c1 {
+	color: #9a9a9a;
+	font-style: italic;
+}
+
+/* Strings */
+pre code .s, pre code .s1, pre code .s2 {
+	color: #87a896;
+}
+
+/* Keywords */
+pre code .k, pre code .kd {
+	color: #9b89b3;
+	font-weight: 600;
+}
+
+/* Functions */
+pre code .nf, pre code .f {
+	color: #7a9bb3;
+}
+
+/* Numbers */
+pre code .m, pre code .mi, pre code .mf {
+	color: #d4a57b;
+}
+
+/* Operators */
+pre code .o {
+	color: #9b89b3;
+}
+
+/* Built-in */
+pre code .nb {
+	color: #87b5a9;
+}
+
+/* Class names */
+pre code .nc {
+	color: #7a9bb3;
+	font-weight: 600;
+}
